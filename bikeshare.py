@@ -109,7 +109,7 @@ def time_stats(df):
     most_common_start_hour = df['start_hour'].value_counts().idxmax()
     print("Most common start hour: {}".format(datetime.time(most_common_start_hour).strftime("%I:00 %p")))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCompleted in %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -132,7 +132,7 @@ def station_stats(df):
     most_common_start_end_station = df['Start End'].value_counts().idxmax()
     print("Most common stations to start and end a trip: {}".format(most_common_start_end_station))  
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCompleted in %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -151,7 +151,7 @@ def trip_duration_stats(df):
     travel_time_mean = df['Trip Duration'].mean() // 60
     print("The mean travel time is {} minutes.".format(travel_time_mean))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCompleted in %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -179,7 +179,7 @@ def user_stats(df):
         print("\nThe youngest rider was born in {}.".format(int(year_of_birth_latest)))
         print("\n{} is the most common birth year.\n".format(int(year_of_birth_common)))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCompleted in %s seconds." % (time.time() - start_time))
     print('-'*40)
 
    
