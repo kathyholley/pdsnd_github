@@ -4,7 +4,13 @@
 _August 1, 2021_
 
 ### Description
-Bikeshare displays statistics on bicycle rental and usage by city.
+Bikeshare displays statistics on bicycle rental and usage by city, including the following fields:
+* Start Time
+* End Time
+* Trip Duration
+* Start Station
+* End Station
+* User Type
 
 ### Language
 Python
@@ -12,7 +18,7 @@ Python
 ### Files used
 - bikeshare.py
 
-The following files were **excluded** from the project due to thier large size:
+The following data files were **excluded** from the project due to thier large size:
 - chicago.csv
 - new_york_city.csv
 - washington.csv
