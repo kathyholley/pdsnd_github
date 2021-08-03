@@ -17,10 +17,10 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!\n')
+    print('Hello! Let\'s explore some US Bikeshare data!\n')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     cities = CITY_DATA.keys()
-    print("Here's a list of bikeshare cities:\n")
+    print("Select from this list of Bikeshare cities:\n")
     while True:
         for city_key, value in CITY_DATA.items():
             print("> {}".format(city_key).title())    
